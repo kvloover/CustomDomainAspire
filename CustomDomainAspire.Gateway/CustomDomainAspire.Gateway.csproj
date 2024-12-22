@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\CustomDomainAspire.ServiceDefaults\CustomDomainAspire.ServiceDefaults.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.ServiceDiscovery.Dns" Version="8.2.2" />
+        <PackageReference Include="Microsoft.Extensions.ServiceDiscovery.Yarp" Version="8.2.2" />
+    </ItemGroup>
+
+</Project>

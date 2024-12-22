@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <IsAspireHost>true</IsAspireHost>
+        <UserSecretsId>5f36550b-26ba-4f65-8d9b-8901107eb72b</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\CustomDomainAspire.ApiService\CustomDomainAspire.ApiService.csproj"/>
+        <ProjectReference Include="..\CustomDomainAspire.Gateway\CustomDomainAspire.Gateway.csproj" />
+        <ProjectReference Include="..\CustomDomainAspire.Web\CustomDomainAspire.Web.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Aspire.Hosting.AppHost" Version="8.2.2"/>
+    </ItemGroup>
+
+</Project>
